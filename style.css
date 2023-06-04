@@ -1,12 +1,12 @@
 .main-body{
-    background-image: url("resource/background-body.svg");
+    background-image: url("resource/background-body.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .logo{
-    background-image: url("resource/logo.svg");
+    background-image: url("resource/logo.png");
     height: 100px;
     background-size: contain;
     background-position: center;
@@ -29,17 +29,11 @@
 }
 
 .title1{
-    font-family: "Honey";
-    font-size: 30px;
-    letter-spacing: 3px;
+    font-family: "forte";
+    font-size: 40px;
+    letter-spacing: 4px;
 }
 
-.background{
-    background-image: url("resource/background.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .title2{
     font-size: 25px;

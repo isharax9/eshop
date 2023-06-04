@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="icon" href="resource/logo.svg" />
+    <link rel="icon" href="resource/logo.png" />
 
 </head>
 
@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-12 logo"></div>
                     <div class="col-12">
-                        <p class="text-center title1">Hi, Welcome to eShop</p>
+                        <p class="text-center title1">Hi, Welcome to MK store</p>
                     </div>
                 </div>
             </div>
@@ -36,12 +36,13 @@
             <div class="col-12 p-3">
                 <div class="row">
 
-                    <div class="col-6 d-none d-lg-block background"></div>
+                    
                     <div class="col-12 col-lg-6" id="signUpBox">
                         <div class="row g-2">
                             <div class="col-12">
                                 <p class="title2">Create New Account</p>
                             </div>
+            <!--popup message-->
                             <div class="col-12 d-none" id="msgdiv">
                                 <div class="alert alert-danger" role="alert" id="alertdiv">
                                     <i class="bi bi-x-octagon-fill fs-5" id="msg">
@@ -49,6 +50,7 @@
                                     </i>
                                 </div>
                             </div>
+            <!--popup message-->
                             <div class="col-6">
                                 <label class="form-label">First Name</label>
                                 <input type="text" class="form-control" id="f" />
@@ -203,7 +205,7 @@
             <!-- footer -->
 
             <div class="col-12 fixed-bottom d-none d-lg-block">
-                <p class="text-center">&copy; 2023 eShop.lk || All Right Reserved</p>
+                <p class="text-center">&copy; 2023 mkstore.lk | All Right Reserved</p>
             </div>
 
             <!-- footer -->
