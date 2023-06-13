@@ -20,11 +20,11 @@ if (empty($email)){
     }else if(empty($vcode)){
         echo("Please enter your Verification code");
     }else{
-        $rs = Database::search("SELECT * FROM `user` WHERE `email`='".$email."' AND `verification_code`='".$vcode."' ");
+        $rs = Database::search("SELECT * FROM `user` WHERE `email`='".$email."' AND `verification_code` = '".$vcode."' ");
         $n = $rs->num_rows;
 
         if($n == 1){
-            Database::iud("UPDATE `user` SET `password`='".$np."' WHERE `email`='".$email."'");
+            Database::iud("UPDATE `user` SET `password` = '".$np."' WHERE `email`='".$email."'");
             echo("success");
         }else{
             echo("Invalid Email or Verification Code");

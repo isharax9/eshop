@@ -152,7 +152,14 @@ function resetpw(){
     r.onreadystatechange = function(){
         if(r.readyState == 4){
             var t = r.responseText;
-            alert(t);
+            if(t == "success"){
+
+                bm.hide();
+                alert("Password reset success");
+
+            }else{
+                alert(t);
+            }
         }
     };
 
