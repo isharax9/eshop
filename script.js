@@ -101,7 +101,63 @@ function forgotPassword() {
 
     r.open("GET", "forgotPasswordProcess.php?e=" + email.value, true);
     r.send();
+}
 
+function ShowPassword1(){
+    var i= document.getElementById("npi");
+    var eye = document.getElementById("e1");
+
+    if(i.type == "password"){
+        i.type = "text";
+        eye.className = "bi bi-eye-fill";
+
+    }else{
+        i.type = "password";
+        eye.className = "bi bi-eye-slash-fill";
+
+    }
+    
+}
+
+function ShowPassword2(){
+    var i= document.getElementById("rnp");
+    var eye = document.getElementById("e2");
+
+    if(i.type == "password"){
+        i.type = "text";
+        eye.className = "bi bi-eye-fill";
+
+    }else{
+        i.type = "password";
+        eye.className = "bi bi-eye-slash-fill";
+    }
+    
+}
+
+function resetpw(){
+    var email = document.getElementById("email2");
+    var np = document.getElementById("npi");
+    var rnp = document.getElementById("rnp");
+    var vcode = document.getElementById("vc");
+
+
+    var f = new FormData();
+    f.append("e",email.value);
+    f.append("n",np.value);
+    f.append("r",rnp.value);
+    f.append("v",vcode.value);
+
+    var r = new XMLHttpRequest();
+
+    r.onreadystatechange = function(){
+        if(r.readyState == 4){
+            var t = r.responseText;
+            alert(t);
+        }
+    };
+
+    r.open("POST","resetPassword.php",true);
+    r.send(f);
 
 
 }

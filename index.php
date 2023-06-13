@@ -99,7 +99,7 @@
                                 <button class="btn btn-primary" onclick="signUp();">Sign Up</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-dark" onclick="changeView();">Already have an account?Sign In</button>
+                                <button class="btn btn-dark" onclick="changeView();">Already Have An Account? Sign In Here</button>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                                 <button class="btn btn-primary" onclick="signIn();">Sign In</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid">
-                                <button class="btn btn-danger" onclick="changeView();">New to eShop?Join Now</button>
+                                <button class="btn btn-danger" onclick="changeView();">New To MK Store? Join Now</button>
                             </div>
                         </div>
 
@@ -172,29 +172,29 @@
                                 <div class="col-6">
                                     <label class="form-label">New Password</label>
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control" />
-                                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-eye-slash-fill"></i></button>
+                                        <input type="password" class="form-control" id="npi" />
+                                        <button class="btn btn-outline-secondary" type="button" id="npb" onclick="ShowPassword1();"><i id="e1" class="bi bi-eye-slash-fill"></i></button>
                                     </div>
                                 </div>
 
                                 <div class="col-6">
                                     <label class="form-label">Re-type Password</label>
                                     <div class="input-group mb-3">
-                                        <input type="password" class="form-control" />
-                                        <button class="btn btn-outline-secondary" type="button"><i class="bi bi-eye-slash-fill"></i></button>
+                                        <input type="password" class="form-control" id="rnp" />
+                                        <button class="btn btn-outline-secondary" type="button" id="rnpb" onclick="ShowPassword2();"><i id="e2" class="bi bi-eye-slash-fill"></i></button>
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <label class="form-label">Verification Code</label>
-                                    <input type="text" class="form-control" />
+                                    <input type="text" class="form-control" id="vc"/>
                                 </div>
 
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Reset Password</button>
+                            <button type="button" class="btn btn-primary" onclick="resetpw();">Reset Password</button>
                         </div>
                     </div>
                 </div>
